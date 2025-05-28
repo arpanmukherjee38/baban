@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Joymalya Banerjee's Family</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&family=Fredoka+One&display=swap');
+
+    /* Background pattern: subtle polka dots */
+    body {
+      background-color: #fff6fb;
+      background-image:
+        radial-gradient(#ffd6e8 2px, transparent 2px),
+        radial-gradient(#ffd6e8 2px, transparent 2px);
+      background-position: 0 0, 20px 20px;
+      background-size: 40px 40px;
+      margin: 0;
+      font-family: 'Comic Neue', cursive, 'Fredoka One', cursive, sans-serif;
+      color: #3b3b58;
+      text-align: center;
+      padding: 20px;
+      user-select: none;
+    }
+
+    header {
+      background: #ff6f91;
+      color: #fff;
+      padding: 30px 20px;
+      font-size: 2.8rem;
+      text-shadow: 2px 2px #d43f6a;
+      border-radius: 25px;
+      box-shadow: 0 6px 12px rgba(255, 111, 145, 0.6);
+      margin-bottom: 25px;
+      letter-spacing: 0.05em;
+    }
+
+    nav {
+      background: #ffd6e8;
+      padding: 15px 0;
+      border-radius: 15px;
+      box-shadow: 0 4px 10px #ffa3beaa;
+      margin-bottom: 30px;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    nav a {
+      font-weight: 700;
+      font-family: 'Fredoka One', cursive;
+      text-decoration: none;
+      color: #d43f6a;
+      background: #fff0f5;
+      padding: 12px 25px;
+      border-radius: 40px;
+      box-shadow: 0 3px 8px #d43f6a88;
+      transition: transform 0.3s ease, background-color 0.3s ease;
+      user-select: none;
+    }
+
+    nav a:hover,
+    nav a:focus {
+      background: #d43f6a;
+      color: white;
+      transform: scale(1.1);
+      outline: none;
+    }
+
+    .container {
+      background: #fff0f5;
+      max-width: 600px;
+      margin: 0 auto;
+      border-radius: 30px;
+      padding: 40px 30px;
+      box-shadow: 0 10px 25px rgba(212, 63, 106, 0.25);
+      line-height: 1.6;
+      font-size: 1.25rem;
+      color: #6a4066;
+      user-select: text;
+    }
+
+    .container h1 {
+      font-family: 'Fredoka One', cursive;
+      font-size: 2rem;
+      margin-bottom: 25px;
+      color: #ff6f91;
+      text-shadow: 1px 1px #d43f6aaa;
+    }
+
+    .family-member {
+      background: #ffb3c1;
+      margin: 12px auto;
+      max-width: 450px;
+      padding: 15px 20px;
+      border-radius: 30px;
+      box-shadow: 0 6px 15px #ff6f91aa;
+      color: #4b2350;
+      font-weight: 600;
+      transition: background-color 0.4s ease, transform 0.3s ease;
+      cursor: default;
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      user-select: text;
+    }
+
+    .family-member:hover {
+      background-color: #d43f6a;
+      color: #fff;
+      animation: bounce 0.6s ease forwards;
+    }
+
+    .family-member:focus {
+      outline: 2px solid #d43f6a;
+      outline-offset: 4px;
+      animation: bounce 0.6s ease forwards;
+    }
+
+    /* Animation: bounce */
+    @keyframes bounce {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-12px); }
+    }
+
+    /* Wiggle animation for the icon */
+    .family-icon {
+      width: 40px;
+      height: 40px;
+      flex-shrink: 0;
+      animation: wiggle 5s ease-in-out infinite;
+      transition: transform 0.3s ease;
+    }
+
+    .family-member:hover .family-icon,
+    .family-member:focus .family-icon {
+      animation: wiggle-hover 0.5s ease-in-out;
+    }
+
+    @keyframes wiggle {
+      0%, 100% { transform: rotate(0deg); }
+      25% { transform: rotate(5deg); }
+      75% { transform: rotate(-5deg); }
+    }
+
+    @keyframes wiggle-hover {
+      0%, 100% { transform: rotate(0deg); }
+      25% { transform: rotate(15deg); }
+      75% { transform: rotate(-15deg); }
+    }
+
+    h2 {
+      margin-top: 35px;
+      font-size: 1.9rem;
+      color: #d43f6a;
+      font-family: 'Fredoka One', cursive;
+      text-shadow: 1px 1px #ffb3c1;
+    }
+
+    h2::after {
+      content: " ❤️";
+      display: inline-block;
+      animation: pulse 2s infinite;
+    }
+
+    @keyframes pulse {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.3); }
+    }
+  </style>
+</head>
+<body>
+  <header>Meet My Family 🎉</header>
+  <nav>
+    <a href="index .html">Home</a>
+    <a href="creations.html">My Creations</a>
+  </nav>
+  <main class="container" role="main" aria-label="Family members information">
+    <h1>Meet My Wonderful Family</h1>
+
+    <div class="family-member" tabindex="0">
+      <svg class="family-icon" viewBox="0 0 64 64" fill="#ff6f91" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+        <circle cx="32" cy="20" r="12"/>
+        <path d="M16 54c0-8 32-8 32 0v6H16v-6z"/>
+      </svg>
+      👴 Grandfather: Biswanath Banerjee — The wise storyteller of our family.
+    </div>
+
+    <div class="family-member" tabindex="0">
+      <svg class="family-icon" viewBox="0 0 64 64" fill="#d43f6a" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+        <circle cx="32" cy="20" r="12"/>
+        <path d="M20 54c0-6 24-6 24 0v8H20v-8z"/>
+        <circle cx="22" cy="18" r="5" fill="#ffb3c1"/>
+      </svg>
+      👵 Grandmother: Dipti Banerjee — The heartwarming baker who fills our home with love.
+    </div>
+
+    <div class="family-member" tabindex="0">
+      <svg class="family-icon" viewBox="0 0 64 64" fill="#ff85a2" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+        <circle cx="32" cy="20" r="12"/>
+        <rect x="16" y="40" width="32" height="14" rx="6" ry="6"/>
+      </svg>
+      👨 Father: Manas Banerjee — Our pillar of strength and humor.
+    </div>
+
+    <div class="family-member" tabindex="0">
+      <svg class="family-icon" viewBox="0 0 64 64" fill="#ff6f91" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+        <circle cx="32" cy="20" r="12"/>
+        <path d="M12 54c0-7 40-7 40 0v4H12v-4z"/>
+      </svg>
+      🧑 Uncle: Tapas Banerjee — The adventurous spirit .
+    </div>
+
+    <div class="family-member" tabindex="0">
+      <svg class="family-icon" viewBox="0 0 64 64" fill="#d43f6a" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+        <circle cx="32" cy="20" r="12"/>
+        <ellipse cx="32" cy="52" rx="20" ry="10"/>
+      </svg>
+      👩 Mother: Sumana Banerjee — The caring soul who keeps us all together.
+    </div>
+
+    <h2>This is my family... ❤️</h2>
+  </main>
+</body>
+</html>

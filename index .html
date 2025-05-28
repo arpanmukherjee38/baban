@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Joymalya's Fun World!</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&display=swap');
+
+  /* Background with playful pastel polka dots pattern */
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Comic Neue', cursive, sans-serif;
+    background-color: #fff0f6;
+    background-image:
+      radial-gradient(circle at 10px 10px, #ffb6c1 8px, transparent 9px),
+      radial-gradient(circle at 30px 30px, #ff69b4 6px, transparent 7px);
+    background-repeat: repeat;
+    background-size: 40px 40px;
+    color: #462749;
+    text-align: center;
+  }
+
+  header {
+    background: linear-gradient(135deg, #ff8db0, #ff3d7f);
+    color: white;
+    padding: 30px 20px;
+    font-size: 2.8rem;
+    font-weight: 700;
+    text-shadow: 2px 2px 4px #a3204d;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+    box-shadow: 0 10px 25px #ff4b86cc;
+  }
+
+  nav {
+    margin: 25px auto 40px;
+    max-width: 700px;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+  }
+
+  nav a {
+    background: #ff8db0;
+    color: white;
+    font-weight: 700;
+    text-decoration: none;
+    padding: 12px 25px;
+    border-radius: 30px;
+    box-shadow: 0 6px 12px #ff4b86aa;
+    font-size: 1.1rem;
+    transition: background-color 0.3s ease, transform 0.25s ease;
+  }
+
+  nav a:hover,
+  nav a:focus {
+    background: #ff3d7f;
+    transform: scale(1.1);
+    outline: none;
+  }
+
+  .container {
+    max-width: 600px;
+    margin: 0 auto 50px;
+    background: white;
+    padding: 40px 35px;
+    border-radius: 40px;
+    box-shadow: 0 15px 40px rgba(255, 60, 110, 0.2);
+    color: #5c2b57;
+    font-size: 1.3rem;
+    line-height: 1.5;
+    user-select: none;
+  }
+
+  .profile-pic {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    border: 6px solid #ff4b86;
+    object-fit: cover;
+    box-shadow: 0 8px 25px #ff4b86aa;
+    margin-bottom: 30px;
+    transition: transform 0.4s ease;
+  }
+
+  .profile-pic:hover {
+    transform: scale(1.05) rotate(5deg);
+  }
+
+  h2 {
+    font-family: 'Comic Neue', cursive, sans-serif;
+    font-weight: 900;
+    font-size: 2rem;
+    color: #ff3d7f;
+    margin-bottom: 20px;
+    text-shadow: 1px 1px #ffa5c4;
+  }
+
+  p strong {
+    color: #d92366;
+  }
+
+  footer {
+    background: #ff3d7f;
+    color: white;
+    padding: 18px 10px;
+    font-size: 1rem;
+    font-weight: 700;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    box-shadow: 0 -10px 25px #ff4b86cc;
+    user-select: none;
+  }
+
+  /* Bounce animation for container on load */
+  @keyframes bounceIn {
+    0% { transform: scale(0.8); opacity: 0; }
+    60% { transform: scale(1.05); opacity: 1; }
+    100% { transform: scale(1); }
+  }
+
+  .container {
+    animation: bounceIn 0.8s ease forwards;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  Hello! I'm Joymalya Banerjee! 🎉
+</header>
+
+<nav>
+  <a href="">Home</a>
+  <a href="creations.html">My Creations</a>
+  <a href="contact.html">Family's</a>
+</nav>
+
+<div class="container">
+  <img src="WhatsApp Image 2025-05-28 at 10.55.26_fb0269ee.jpg" alt="Joymalya Banerjee's Photo" class="profile-pic" />
+  <h2>Welcome to My Fun World!</h2>
+  <p>Hi there! My name is <strong>Joymalya Banerjee</strong>, and I'm a Class 4 student.</p>
+  <p>I love learning new things and having lots of fun! I enjoy <strong>drawing</strong>, reading exciting <strong>storybooks</strong>, and playing energetic games of <strong>football</strong>.</p>
+  <p>Come and explore my website to see all the cool things I've been up to!</p>
+</div>
+
+<footer>
+  &copy; 2025 Joymalya's Fun World. Created with ❤️ by his family.
+</footer>
+
+</body>
+</html>
+
